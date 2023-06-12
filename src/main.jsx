@@ -19,6 +19,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { basename: import.meta.env.DEV ? "/" : "/pokedex/" },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
