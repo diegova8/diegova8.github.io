@@ -18,7 +18,6 @@ const Pokemon = () => {
   }, [pokemonId]);
 
   const { name, abilities, height, weight, moves, stats, types } = pokemon;
-  console.log(name, abilities, height, weight, moves, stats, types);
   return (
     <div className="flex flex-col items-center">
       <img
@@ -50,6 +49,12 @@ const Pokemon = () => {
             <li key={stat.stat.name}>
               {stat.stat.name + ": " + stat.base_stat}
             </li>
+          ))}
+        </ul>
+        <h3 className="text-xl font-bold mb-2">Types</h3>
+        <ul className="list-disc">
+          {types?.map((type) => (
+            <li key={type.type.name}>{type.type.name}</li>
           ))}
         </ul>
       </div>
