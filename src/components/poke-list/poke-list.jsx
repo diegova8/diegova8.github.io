@@ -18,8 +18,8 @@ const PokeList = ({ pokemon }) => {
                 <li
                   key={pokemon.name}
                   className={`${
-                    pokemonId === pokemon.name ? "bg-red-500" : ""
-                  } m-1 p-2 sm:p-3 sm:m-2 hover:bg-red-500 rounded`}
+                    pokemonId === pokemon.name ? "bg-red-600" : ""
+                  } m-1 p-2 sm:p-3 sm:m-2 hover:bg-red-600 rounded`}
                 >
                   <div className="flex items-center space-x-4">
                     <div className="flex flex-row">
